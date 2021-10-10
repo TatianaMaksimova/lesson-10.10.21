@@ -1,0 +1,62 @@
+img {
+  display: block;
+  width: 100%;
+}
+
+.thumb {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .thumb {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .thumb {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .thumb {
+    width: 270px;
+  }
+}
+
+.container {
+  width: 1200px;
+  padding: 20px;
+  margin: 0;
+}
+
+.extra-text {
+  display: none;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+label {
+  border: 2px solid gray;
+  padding: 10px 20px;
+}
+
+#read-more:checked ~ .extra-text {
+  display: block;
+}
+
+.less {
+  display: none;
+}
+
+#read-more:checked ~ .read-more .more {
+  display: none;
+}
+
+#read-more:checked ~ .read-more .less {
+  display: inline;
+}
